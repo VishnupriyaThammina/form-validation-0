@@ -3,97 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Securin Intern</title>
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    <title>Form</title>
+    <link rel="stylesheet" href="../CSS/form_style.css">
 </head>
 <body>
-    <div class="wrap">
-        <div>
-            <h1 class="h2-1"> Welcome </h1>
-        </div>
-      
-        <form  method="get" class="form-wrap">
-<div class="div-inp">
-    <div class="wrap-label"><!-- Id is used to connect label and input -->
-    <!-- name is used for data storing  -->
-    <label for="name">Name</label></div>
-   <div class="wrap-inp"><input type="text" id="name" name="name" autocomplete="name"></div>
-</div>
-<div class="div-inp">
-    <div class="wrap-label">
-    <label for="email">Email</label></div>
-   <div class="wrap-inp"><input type="email" id="email" name="email" autocomplete="email"></div>
+    <div class="cen">
+        <h2>Registration Form</h2>
+        <div class="form-wrap ">
+            <form>
+                <div class="form-f" method="GET">
+                    <label for="name">Name</label>
+                   <input class="input"type="text" id="name" name="name">   
+                    
+                </div>
 
-</div>
-<div class="div-inp">
-    <div class="wrap-label">
-    <label for="uname">Username</label></div>
-   <div class="wrap-inp"><input type="text" id="uname" name="uname"></div>
-</div>
-<div class="div-inp">
-    <div class="wrap-label">
-    <label for="pass">Password</label></div>
-   <div class="wrap-inp"><input type="password" id="pass" name="pass"></div>
-</div>
-<div class="div-inp">
-    <div class="wrap-label">
-    <label for="confirm-pass">Confirm Password</label></div>
-   <div class="wrap-inp"><input type="password" id="confirm-pass" name="confirm-pass"></div>
-</div>
-<div class="div-inp">
-    <legend>Gender</legend>
+                <div class="form-f">
+                    <label for="email">Email</label>
+                   <input class="input"type="email" id="email" name="email">    
+                </div>
 
-    <div class="wrap-label">
-    <label for="male" style="display: flex; justify-content: center;
-    align-items: center; flex-direction: row;">
-        <input type="radio" id="male" name="gender" value="Male"> Male
-    </label></div>
-   <div class="wrap-inp">
-    <label for="female" style="display: flex; justify-content: center;
-    align-items: center; flex-direction: row;">
-        <input type="radio" id="female" name="gender" value="female"> Female
-    </label>
-   </div>
-</div>
-<div class="div-inp">
-    <div class="wrap-label">
-    <label for="course">List of courses</label></div>
-   <div class="wrap-inp">
-    <select id="course">
-        <option value="CRYPTO">Cryptography</option>
-        <option value="FSD">Full Stack Development</option>
-        <option value="CCN">Computer Network</option>
+                <div class="form-f">
+                    <label for="uname">Username</label>
+                   <input class="input"type="text" id="uname" name="uname">    
+                </div>
 
-    </select>
-   </div>
-</div>
-<div class="div-inp">
-   
-   <div class="wrap-inp"><input type="hidden" id="hidden-feild" name="hidden-feild"></div>
-</div>
-<div class="div-inp">
-    <div class="wrap-label">
-    <label for="uimg">Upload Image</label></div>
-   <div class="wrap-inp"><input type="file" id="uimg" name="uimg"></div>
-</div>
-<div class="div-inp">
-<button type="submit">Submit</button> 
-</div>
-      </form>
+                <div class="form-f">
+                    <label for="password-1">Password</label>
+                   <input class="input"type="password" id="password-1" name="password-1">    
+                </div>
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, labore ipsum quidem enim illum eaque. Incidunt esse maiores aperiam ad dignissimos officiis repudiandae dolore temporibus.
-        </p>
+                <div class="form-f">
+                    <label for="password-2">Confirm Password</label>
+                   <input class="input"type="password" id="password-2" name="password-2">    
+                </div>
+
+                <div  >
+                   <label for="gender">Gender</label>
+                 
+
+            
+                  <input class="inp1" type="radio" id="male" name="gender" value="male">
+                   <label  for="male">Male</label>
+                  <input class="inp1"type="radio" id="female" name="gender" value="female">
+                   <label  class="inp1" for="female">Female</label>
+               
+                </div>
+                <div class="form-f">
+                    <label for="courses">
+                        List of Courses
+                    </label>
+                    <select id="course">
+                        <option value="fsd1">FSD 1</option>
+                        <option value="fsd2">FSD 2</option>
+                        <option value="fsd3">FSD 3</option>
+
+                    </select>
+                </div>
+
+                <div class="form-f">
+                    <label for="img-1">Upload Image</label>
+                   <input class="input"type="file" id="img-1" name="img-1">
+                </div>
+                <div>
+                    <button>Submit</button>
+                </div>
+</form>
+                </div>
     </div>
-    <script>
-      var colors = ['red','blue','green'];
-colors.push('p')
-        alert("script tag works?! "+ colors)
-    </script>
+  <script src="../JS/form.js"></script>
 </body>
 </html>
-
-
